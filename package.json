@@ -1,0 +1,24 @@
+{
+  "name": "regular-redux",
+  "version": "0.0.1",
+  "description": "Regular.js Redux bindings",
+  "main": "lib/regular-redux.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinze/regular-redux.git"
+  },
+  "keywords": [
+    "regular",
+    "regularjs",
+    "redux"
+  ],
+  "author": "Jin Ze <luckyruisin@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jinze/regular-redux/issues"
+  },
+  "homepage": "https://github.com/jinze/regular-redux#readme"
+}
