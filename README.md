@@ -1,3 +1,3 @@
 # regular-redux
 
-Regular.js Redux bindings
+Regular.js Redux binding
