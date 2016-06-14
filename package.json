@@ -4,6 +4,10 @@
   "description": "Regular.js Redux binding",
   "main": "lib/regular-redux.js",
   "scripts": {
+    "build:lib": "babel src --out-dir lib",
+    "build:umd": "cross-env NODE_ENV=development webpack src/index.js dist/react-redux.js",
+    "build:umd:min": "cross-env NODE_ENV=production webpack src/index.js dist/react-redux.min.js",
+    "build": "npm run build:lib && npm run build:umd && npm run build:umd:min",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +24,14 @@
   "bugs": {
     "url": "https://github.com/jinze/regular-redux/issues"
   },
-  "homepage": "https://github.com/jinze/regular-redux#readme"
+  "homepage": "https://github.com/jinze/regular-redux#readme",
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-preset-es2015": "^6.9.0",
+    "cross-env": "~1.0.8",
+    "webpack": "~1.13.1"
+  }
 }
