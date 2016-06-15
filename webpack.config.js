@@ -3,10 +3,16 @@
 var webpack = require('webpack')
 var env = process.env.NODE_ENV
 
+var reduxExternal = {
+  root: 'Redux',
+  commonjs2: 'redux',
+  commonjs: 'redux',
+  amd: 'redux'
+}
+
 var webpackConfig = {
   externals: {
-    "regularjs": "Regular",
-    'redux': "Redux"
+    'redux': reduxExternal
   },
   module: {
     loaders: [
