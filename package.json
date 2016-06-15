@@ -2,11 +2,11 @@
   "name": "regular-redux",
   "version": "0.0.1",
   "description": "Regular.js Redux binding",
-  "main": "lib/regular-redux.js",
+  "main": "lib/index.js",
   "scripts": {
     "build:lib": "babel src --out-dir lib",
-    "build:umd": "cross-env NODE_ENV=development webpack src/index.js dist/react-redux.js",
-    "build:umd:min": "cross-env NODE_ENV=production webpack src/index.js dist/react-redux.min.js",
+    "build:umd": "cross-env NODE_ENV=development webpack src/index.js dist/regular-redux.js",
+    "build:umd:min": "cross-env NODE_ENV=production webpack src/index.js dist/regular-redux.min.js",
     "build": "npm run build:lib && npm run build:umd && npm run build:umd:min",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
