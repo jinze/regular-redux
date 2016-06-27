@@ -27,7 +27,8 @@ let Container = function(Component){
     events: {
       $config: function(){
         let alias = this.__reduxStoreAlias || 'store'
-        let store = this[alias] || getStore(this)
+        this[alias] = this[alias] || getStore(this)
+        let store = this[alias]
         if(!store){
           throw new Error('Redux Container should have a store.')
         }
