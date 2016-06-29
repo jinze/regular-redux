@@ -1,6 +1,6 @@
 {
   "name": "regular-redux",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Regular.js Redux binding",
   "main": "lib/index.js",
   "scripts": {

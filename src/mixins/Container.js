@@ -32,7 +32,10 @@ let Container = function(Component){
         if(!store){
           throw new Error('Redux Container should have a store.')
         }
-        let unsubscribe = store.subscribe(handleChange(store).bind(this))
+        let changeState = handleChange(store).bind(this)
+        let unsubscribe = store.subscribe(changeState)
+        // fire the change event first
+        changeState()
         this.$on('$destroy', unsubscribe)
       }
     }
